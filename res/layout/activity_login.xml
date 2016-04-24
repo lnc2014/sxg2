@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/img_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:contentDescription="@null"
+        android:src="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/img_icon"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/accountbg"
+        android:ems="10"
+        android:hint="手机号："
+        android:singleLine="true"
+        android:textColorHint="#a8a8a8" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_username"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/accountbg"
+        android:ems="10"
+        android:hint="密码："
+        android:singleLine="true"
+        android:textColorHint="#a8a8a8" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/et_passwd"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#EA3A00"
+        android:text="登  陆"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_regist"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/bt_login"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#F4B000"
+        android:text="注   册"
+        android:textColor="@color/offWhite"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/bt_regist"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="4dp"
+        android:text="找回密码"
+        android:textColor="#F4C9B2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="深圳市闪修哥维修技术有限公司"
+        android:textColor="#F4C9B2"
+        android:textSize="16sp" />
+
+</RelativeLayout>

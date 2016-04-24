@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg" >
+
+    <ImageView
+        android:id="@+id/audit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="90dp"
+        android:src="@drawable/audit" />
+
+    <TextView
+        android:id="@+id/text_progresss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/audit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="账号审核中"
+        android:textColor="#EA3A00"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_progresss"
+        android:layout_centerHorizontal="true"
+        android:text="请耐心等待"
+        android:textColor="@color/lightGray"
+        android:textSize="20sp" />
+
+</RelativeLayout>

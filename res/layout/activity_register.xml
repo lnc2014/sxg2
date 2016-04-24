@@ -1,0 +1,102 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/title_regist"
+        layout="@layout/title" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/accountbg"
+        android:ems="10"
+        android:hint="手机号："
+        android:singleLine="true"
+        android:textColorHint="#a8a8a8" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CCC"
+        android:gravity="center"
+        android:textColor="#a8a8a8"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <EditText
+            android:id="@+id/et_verifer"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/accountbg"
+            android:ems="10"
+            android:hint="验证码："
+            android:singleLine="true"
+            android:textColorHint="#a8a8a8" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="验证码（60）"
+            android:textColor="#a8a8a8"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:background="#CCC"
+        android:gravity="center"
+        android:textColor="#a8a8a8"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/et_passwd"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/accountbg"
+        android:ems="10"
+        android:hint="密码："
+        android:singleLine="true"
+        android:textColorHint="#a8a8a8" >
+    </EditText>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="#EA3A00"
+        android:text="下一步" />
+
+    <TextView
+        android:id="@+id/text_statement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:layout_marginTop="70dp"
+        android:text="点击下一步，即表示您已经仔细阅读并同意《闪修哥免责声明》"
+        android:textColor="#A8A8A8"
+        android:textSize="18sp" >
+    </TextView>
+
+</LinearLayout>
